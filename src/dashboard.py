@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import mysql.connector
 
 
 # --------------------------------
@@ -17,35 +16,19 @@ st.set_page_config(
 # --------------------------------
 # Database Connection Function
 # --------------------------------
-def get_connection():
 
-    return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Sriii@260108",
-        database="hr_dashboard"
-    )
 
 
 # --------------------------------
 # Load Data
 # --------------------------------
+
 @st.cache_data
 def load_data():
 
-    conn = get_connection()
-
-    query = """
-    SELECT *
-    FROM employees;
-    """
-
-    df = pd.read_sql(query, conn)
-
-    conn.close()
+    df = pd.read_csv("data/employee_data.csv")
 
     return df
-
 
 
 df = load_data()
