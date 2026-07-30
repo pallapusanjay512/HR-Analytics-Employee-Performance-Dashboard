@@ -2,8 +2,9 @@
 
 ## 🚀 Live Demo
 
-https://hr-analytics-employee-performance-dashboard-dqbg7dvy4p97xwtmck.streamlit.app/
+## 🚀 Live Demo
 
+[Open HR Analytics Dashboard](https://hr-analytics-employee-performance-dashboard-dqbg7dvy4p97xwtmck.streamlit.app/)
 ## 📌 Project Overview
 
 An interactive HR Analytics Dashboard built to analyze employee performance, salary distribution, attrition, and work-life balance.
